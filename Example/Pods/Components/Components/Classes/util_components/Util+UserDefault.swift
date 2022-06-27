@@ -116,14 +116,14 @@ func userGetString(key: String,defaultValue:String) -> String? {
 }
 
 //UserDefault 获取字符串
-func userGetString(key: String) -> String? {
+public func userGetString(key: String) -> String? {
     let defaults = UserDefaults.standard
     let value = defaults.string(forKey: key)
     return value
 }
 
 //重置userdefault
-func userSaveEnd(isAnsy: Bool) {
+private func userSaveEnd(isAnsy: Bool) {
     let defaults = UserDefaults.standard
     if isAnsy {
         defaults.synchronize()
@@ -133,42 +133,42 @@ func userSaveEnd(isAnsy: Bool) {
 }
 
 //UserDefault 保存
-func userSave(key: String, value: Any, isAnsy: Bool = true) {
+public func userSave(key: String, value: Any, isAnsy: Bool = true) {
     let defaults = UserDefaults.standard
     defaults.set(value, forKey: key)
     userSaveEnd(isAnsy: isAnsy)
 }
 
 //UserDefault 保存Int
-func userSaveInt(key: String, value: Int, isAnsy: Bool = true) {
+public func userSaveInt(key: String, value: Int, isAnsy: Bool = true) {
     let defaults = UserDefaults.standard
     defaults.set(value, forKey: key)
     userSaveEnd(isAnsy: isAnsy)
 }
 
 //UserDefault 保存Float
-func userSaveFloat(key: String, value: Float, isAnsy: Bool = true) {
+public func userSaveFloat(key: String, value: Float, isAnsy: Bool = true) {
     let defaults = UserDefaults.standard
     defaults.set(value, forKey: key)
     userSaveEnd(isAnsy: isAnsy)
 }
 
 //UserDefault 保存Double
-func userSaveDouble(key: String, value: Double, isAnsy: Bool = true) {
+public func userSaveDouble(key: String, value: Double, isAnsy: Bool = true) {
     let defaults = UserDefaults.standard
     defaults.set(value, forKey: key)
     userSaveEnd(isAnsy: isAnsy)
 }
 
 //UserDefault 保存字符串
-func userSaveString(key: String, value: String, isAnsy: Bool = true) {
+public func userSaveString(key: String, value: String, isAnsy: Bool = true) {
     let defaults = UserDefaults.standard
     defaults.set(value, forKey: key)
     userSaveEnd(isAnsy: isAnsy)
 }
 
 //UserDefault 保存Bool
-func userSaveBool(key: String, value: Bool, isAnsy: Bool = true) {
+public func userSaveBool(key: String, value: Bool, isAnsy: Bool = true) {
     let defaults = UserDefaults.standard
     defaults.set(value, forKey: key)
     userSaveEnd(isAnsy: isAnsy)

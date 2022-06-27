@@ -1,5 +1,5 @@
 PODS:
-  - Components (0.1.0)
+  - Components (0.1.3)
   - NoDataTableView (0.1.0):
     - Components (~> 0.1.0)
     - SnapKit (= 5.0.0)
@@ -19,10 +19,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Components: e835e0581b7a7647487a5a87e51635df589e14b8
-  NoDataTableView: 47ba7d0e2751c24019cccd8308f0e1a8c356582c
+  Components: af0467e2e035e4b4bd19291be344eed31d81990a
+  NoDataTableView: 3f11ea778625a756181bca931a0cb0ba918381b6
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
 PODFILE CHECKSUM: c329f87418be1c887529539d66b0728ce2550982
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

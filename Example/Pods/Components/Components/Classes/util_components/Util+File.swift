@@ -9,6 +9,19 @@ import Foundation
 
 public class FileX{
     
+    //获取文件的大小
+    public static func size(atPath:String)->Float{
+        var fileSize: Float = 0.0
+        if isExist(atPath){
+            do {
+                let attr = try FileManager.default.attributesOfItem(atPath: atPath) as NSDictionary
+                fileSize = Float(attr.fileSize())
+            } catch {}
+        }
+        return fileSize
+    }
+
+    
     //判断文件是否存在
     public static func isExist(_ path:String) -> Bool{
         return FileManager.default.fileExists(atPath: path)
@@ -48,5 +61,12 @@ public class FileX{
             return false
         }
     }
+    
+    //删除文件
+    @discardableResult
+    public static func delete(_ url:URL)->Bool{
+        return delete(url.absoluteString)
+    }
+    
 }
 

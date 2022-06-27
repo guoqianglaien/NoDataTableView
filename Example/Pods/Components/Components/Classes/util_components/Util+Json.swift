@@ -22,10 +22,10 @@ public class JsonX{
     }
     
     //read json to model
-    public static func read<T:Codable>(filePath:String)->T?{
+    public static func read<T:Codable>(_ type: T.Type,filePath:String)->T?{
         if let data = filePath.contentData{
             do {
-                let decodedData = try JSONDecoder().decode(T.self,
+                let decodedData = try JSONDecoder().decode(type,
                                                 from: data)
                 return decodedData
             } catch {
@@ -36,10 +36,10 @@ public class JsonX{
     }
     
     //读json to 模型数组 
-    public static func read<T:Codable>(filePath:String)->[T]?{
+    public static func read<T:Codable>(_ type:[T].Type,filePath:String)->[T]?{
         if let data = filePath.contentData{
             do {
-                let decodedData = try JSONDecoder().decode([T].self,
+                let decodedData = try JSONDecoder().decode(type,
                                                 from: data)
                 return decodedData
             } catch {
@@ -64,8 +64,8 @@ public class JsonX{
     }
     
     //保存模型成json
-    public static func write<T:Codable>(filePath:String,model:T)->Bool{
-        if let data = try? JSONEncoder().encode(model){
+    public static func write<T:Codable>(filePath:String,_ object:T)->Bool{
+        if let data = try? JSONEncoder().encode(object){
             do{
                try data.write(to: filePath.url)
                 return true
@@ -76,8 +76,8 @@ public class JsonX{
     }
     
     //保存模型数组成json
-    public static func write<T:Codable>(filePath:String,models:[T])->Bool{
-        if let data = try? JSONEncoder().encode(models){
+    public static func write<T:Codable>(filePath:String,_ objects:[T])->Bool{
+        if let data = try? JSONEncoder().encode(objects){
             do{
                try data.write(to: filePath.url)
                 return true

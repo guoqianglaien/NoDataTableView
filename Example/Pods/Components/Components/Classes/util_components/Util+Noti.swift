@@ -26,6 +26,10 @@ public class NotiX{
         Noti.send(notiName, object: object, userInfo: userInfo)
     }
     
+    public static func send(_ notiName:String, _ object:Any? = nil , _ userInfo: [AnyHashable : Any]? = nil) {
+        Noti.send(notiName, object: object, userInfo: userInfo)
+    }
+    
     public static func remove(_ observer:Any){
         Noti.remove(observer)
     }
@@ -50,6 +54,10 @@ public class Noti {
     }
     
     public static func send(_ notiName:String, object:Any? = nil , userInfo: [AnyHashable : Any]? = nil) {
+        NotificationCenter.default.post(name: NSNotification.Name(notiName), object: object, userInfo: userInfo)
+    }
+    
+    public static func send(_ notiName:String, _ object:Any? = nil , _ userInfo: [AnyHashable : Any]? = nil) {
         NotificationCenter.default.post(name: NSNotification.Name(notiName), object: object, userInfo: userInfo)
     }
     

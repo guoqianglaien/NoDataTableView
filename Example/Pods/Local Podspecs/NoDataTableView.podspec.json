@@ -1,7 +1,7 @@
 {
   "name": "NoDataTableView",
   "version": "0.1.0",
-  "summary": "A short description of NoDataTableView.",
+  "summary": "NoDataTableView for company",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/guoqiang@laien.io/NoDataTableView",
   "license": {
@@ -19,6 +19,7 @@
     "ios": "10.0"
   },
   "static_framework": true,
+  "swift_versions": "5.0",
   "source_files": "NoDataTableView/Classes/**/*",
   "dependencies": {
     "SnapKit": [
@@ -27,5 +28,6 @@
     "Components": [
       "~>0.1.0"
     ]
-  }
+  },
+  "swift_version": "5.0"
 }

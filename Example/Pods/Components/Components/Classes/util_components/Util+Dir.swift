@@ -44,4 +44,31 @@ public class Dir{
         }
     }
     
+    //文件夹是否存在
+    public static func isExist(_ folderPath:String)->Bool{
+        return FileManager.default.fileExists(atPath: folderPath)
+    }
+    
+    //文件夹大小
+    public static func size(_ folderPath:String)->Float{
+        if folderPath.isEmpty {
+            return 0
+        }
+
+        if !isExist(folderPath){
+            return 0
+        }
+        
+        var fileSize: Float = 0.0
+        do {
+            let files = try FileManager.default.contentsOfDirectory(atPath: folderPath)
+            for file in files {
+                let path = folderPath + "/\(file)"
+                fileSize = fileSize + FileX.size(atPath: path)
+            }
+        } catch {}
+        print("\(fileSize)")
+        return fileSize / (1000.0 * 1000.0)
+    }
+    
 }

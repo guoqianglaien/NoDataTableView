@@ -928,38 +928,6 @@
 			};
 			name = Release;
 		};
-		35B9575C9EED86D97B1DBBF0C5979E95 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7A863E2B09628C9F16A7C0109B8299B /* NoDataTableView.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NoDataTableView/NoDataTableView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NoDataTableView/NoDataTableView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/NoDataTableView/NoDataTableView.modulemap";
-				PRODUCT_MODULE_NAME = NoDataTableView;
-				PRODUCT_NAME = NoDataTableView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		3B6E1EFFAA35D4082827A5DA4FE9507F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9C5036E827ED3ACDD83F457498DDE7D /* Components.debug.xcconfig */;
@@ -1083,6 +1051,39 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8DF7D8431A71FDD9CA497B4B49DDB472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9048E096082AC0821D3DC3A93194C8BA /* NoDataTableView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NoDataTableView/NoDataTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NoDataTableView/NoDataTableView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/NoDataTableView/NoDataTableView.modulemap";
+				PRODUCT_MODULE_NAME = NoDataTableView;
+				PRODUCT_NAME = NoDataTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1249,9 +1250,9 @@
 			};
 			name = Debug;
 		};
-		DE4B56D78C14FB0825DD0FD9D39EEAE5 /* Release */ = {
+		E7FB5970F036D53B67BA0B55BD833B43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9048E096082AC0821D3DC3A93194C8BA /* NoDataTableView.release.xcconfig */;
+			baseConfigurationReference = D7A863E2B09628C9F16A7C0109B8299B /* NoDataTableView.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1274,13 +1275,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1324,8 +1324,8 @@
 		FF5F0876A4B9F32149C502E216931421 /* Build configuration list for PBXNativeTarget "NoDataTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				35B9575C9EED86D97B1DBBF0C5979E95 /* Debug */,
-				DE4B56D78C14FB0825DD0FD9D39EEAE5 /* Release */,
+				E7FB5970F036D53B67BA0B55BD833B43 /* Debug */,
+				8DF7D8431A71FDD9CA497B4B49DDB472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

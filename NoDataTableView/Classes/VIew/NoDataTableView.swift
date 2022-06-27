@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Components
 import SnapKit
 
 public enum TableViewNoDataViewType {
@@ -75,15 +74,15 @@ public class NoDataTableView: UIView {
         addSubview(titleLB)
         titleLB.snp.makeConstraints { make in
             make.left.right.equalToSuperview()
-            make.height.equalTo(cIpad(23, 23))
-            make.top.equalTo(imageView.snp.bottom).offset(cIpad(16, 16))
+            make.height.equalTo(23)
+            make.top.equalTo(imageView.snp.bottom).offset(16)
         }
         contentLB.text = type.content
         contentLB.numberOfLines = 0
         addSubview(contentLB)
         contentLB.snp.makeConstraints { make in
             make.left.right.bottom.equalToSuperview()
-            make.top.equalTo(titleLB.snp.bottom).offset(cIpad(8, 8))
+            make.top.equalTo(titleLB.snp.bottom).offset(8)
         }
     }
     
@@ -102,3 +101,15 @@ public class NoDataTableView: UIView {
     }
     
 }
+
+extension UILabel {
+    
+    convenience init(frame: CGRect, text: String?, textColor:  UIColor, font: UIFont, textAligment: NSTextAlignment? = .left) {
+        self.init(frame: frame)
+        self.text = text
+        self.textColor = textColor
+        self.font = font
+        self.textAlignment = textAligment ?? .left
+    }
+}
+
