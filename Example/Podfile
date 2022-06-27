@@ -1,0 +1,12 @@
+
+source "https://github.com/retro-labs/specs-ios-swift.git"
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '10.0'
+
+use_frameworks!
+
+target 'NoDataTableView_Example' do
+  pod 'NoDataTableView', :path => '../'
+  
+end

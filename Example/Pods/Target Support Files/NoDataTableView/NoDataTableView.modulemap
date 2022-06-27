@@ -1,0 +1,6 @@
+framework module NoDataTableView {
+  umbrella header "NoDataTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

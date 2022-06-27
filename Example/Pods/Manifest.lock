@@ -1,0 +1,28 @@
+PODS:
+  - Components (0.1.0)
+  - NoDataTableView (0.1.0):
+    - Components (~> 0.1.0)
+    - SnapKit (= 5.0.0)
+  - SnapKit (5.0.0)
+
+DEPENDENCIES:
+  - NoDataTableView (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
+  https://github.com/retro-labs/specs-ios-swift.git:
+    - Components
+
+EXTERNAL SOURCES:
+  NoDataTableView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Components: e835e0581b7a7647487a5a87e51635df589e14b8
+  NoDataTableView: 47ba7d0e2751c24019cccd8308f0e1a8c356582c
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+
+PODFILE CHECKSUM: c329f87418be1c887529539d66b0728ce2550982
+
+COCOAPODS: 1.11.2

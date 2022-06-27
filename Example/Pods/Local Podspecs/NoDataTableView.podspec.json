@@ -1,0 +1,31 @@
+{
+  "name": "NoDataTableView",
+  "version": "0.1.0",
+  "summary": "A short description of NoDataTableView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/guoqiang@laien.io/NoDataTableView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "guoqiang@laien.io": "guoqiang@laien.io"
+  },
+  "source": {
+    "git": "https://github.com/guoqiang@laien.io/NoDataTableView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "static_framework": true,
+  "source_files": "NoDataTableView/Classes/**/*",
+  "dependencies": {
+    "SnapKit": [
+      "5.0.0"
+    ],
+    "Components": [
+      "~>0.1.0"
+    ]
+  }
+}
