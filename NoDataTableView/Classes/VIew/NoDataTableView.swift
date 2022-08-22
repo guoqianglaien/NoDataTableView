@@ -104,6 +104,9 @@ public class NoDataTableView: UIView {
 
 extension UILabel {
     
+    
+    
+    
     convenience init(frame: CGRect, text: String?, textColor:  UIColor, font: UIFont, textAligment: NSTextAlignment? = .left) {
         self.init(frame: frame)
         self.text = text
